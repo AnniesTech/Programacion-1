@@ -1,0 +1,21 @@
+<!-- Desarrollar un programa que calcule el índice de masa muscular de una persona. La
+fórmula es la siguiente: IMC = Peso (Kg) / Estatura al cuadrado (Mt). Debe imprimir: Su
+peso es X, su estatura en m es X y su IMC es X. -->
+
+<html>
+    <script>
+        peso = 0;
+        estatura = 0;
+        imc = 0;
+        estaturaMt = 0;
+
+        peso = parseFloat(prompt("Por favor ingrese su peso en Kilogramos"));
+        estatura = parseFloat(prompt("Por favor ingrese su estatura en Centimetros"));
+
+        estaturaMt = (estatura * estatura);
+
+        imc = (peso/estaturaMt);
+
+        document.write("Su peso es "+ peso+", su estatura en m es "+ estaturaMt+ " y su IMC es "+imc);
+    </script>
+</html>

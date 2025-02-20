@@ -1,0 +1,27 @@
+<html> 
+    <script> // Es como el inicio del pseudo codigo
+        a = 0;
+        b = 0;
+        pp = 0;
+
+        a = prompt("Ingrese el valor de a");
+        b = prompt("Ingrese el valor de b");
+
+        checkA = typeof(a);
+        checkB = typeof(b);
+        document.write("Tipo de dato de A: ", checkA);
+        document.write(" Tipo de date de B: ", checkB);
+        
+        a = parseInt(a);
+        b = parseInt(b);
+
+        checkA2 = typeof(a);
+        checkB2 = typeof(b);
+        document.write(" Tipo de dato de A usando typeof: ", checkA2);
+        document.write(" Tipo de dato de B usando typeof: ", checkB2);
+
+        pp = 2 * (a+b);
+
+        document.write("El perimetro del Paralelograma es: "+pp);
+    </script>
+</html>

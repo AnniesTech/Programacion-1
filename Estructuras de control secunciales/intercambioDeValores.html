@@ -1,0 +1,23 @@
+<!-- Desarrollar un programa que reciba dos valores numéricos en dos variables (a y b),
+luego estas deben intercambiar su valor. Debe imprimir: “La variable a vale X y la
+variable b vale X” -->
+
+<html>
+    <script>
+        a = 0;
+        initA = 0;
+        b = 0;
+        initB = 0;
+
+        a = parseFloat(prompt("Por favor ingrese un numero"));
+        b = parseFloat(prompt("Por favor ingrese un numero"));
+
+        initA = a;
+        initB = b;
+
+        a = initB;
+        b = initA;
+
+        document.write("La variable a vale "+a+" y la variable b vale "+b);
+    </script>
+</html>

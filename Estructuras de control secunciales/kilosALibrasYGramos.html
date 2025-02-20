@@ -1,0 +1,16 @@
+<!-- Desarrollar un programa que reciba el peso de una persona en kilos e imprima su
+equivalencia en libras y en gramos (una libra tiene 453.592 gramos). Debe imprimir: X
+kilos equivale a X libras y a X gramos. -->
+<html>
+    <script>
+        kilos = 0;
+        libras = 0;
+        gramos = 0;
+
+        kilos = parseFloat(prompt("Ingrese su peso en Kilogramos"));
+        libras = kilos * 2.2;
+        gramos = libras * 453.592;
+        document.write(kilos," kilos equivale a ", libras, " libras y a ", gramos, " gramos.");
+    </script>
+</html>
+

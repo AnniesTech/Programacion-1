@@ -1,0 +1,33 @@
+/*
+ * Calcular el factorial de un número.
+        5! (5 factorial) es 5 * 4 * 3 * 2 * 1 = 120. 
+        los factoriales no funcionan en numero negativos
+ */
+package calcularfactorial;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class CalcularFactorial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        int num = read.nextInt();
+        int calculo=1;
+        String multiplicacion = "";
+        if(num > 0){
+            for(int i = num; i >= 1; i--){
+                if(i > 1){
+                multiplicacion += i + " x ";}
+                else{multiplicacion += i + "=" + " ";}
+                calculo*=i;
+            }
+            System.out.println(num+"! o "+num+" factorial es:"+"\n"+multiplicacion+calculo);}
+        else{System.out.println("Los factoriales no aplican para numeros negativos.");}
+    
+}}

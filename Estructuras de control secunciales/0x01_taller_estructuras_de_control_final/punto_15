@@ -1,0 +1,37 @@
+/*
+ * Leer un número de hasta 4 cifras por pantalla, luego, imprimir si es capicua
+ */
+package leer4cifrasimprimircapicua;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class Leer4CifrasImprimirCapicua {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.println("Por favor ingrese un numero maximo de 4 digitos");
+        int num = read.nextInt();
+        int totalMil=0;
+        int totalCentena = 0;
+        int totalDecena = 0;
+        int totalUnidad = 0;
+        int suma = 0;
+        
+        if(num < 10000){
+            totalMil = num / 1000; //4686 / 1000 = 4
+            totalCentena = (num % 1000) / 100; //4686 % 1000 = 686 ahora 686 / 100 = 6
+            totalDecena = (num % 100) / 10; //4686 % 100 = 86 ahora 86 / 10 = 8
+            totalUnidad = num % 10; //4686 % 10 = 6
+            
+            if(totalMil == totalUnidad && totalCentena == totalDecena){
+                System.out.println("El numero ingresado es capicua");}
+            else{System.out.println("El numero ingresado no es capicua");}
+    }else{System.out.println("El numero ingresado debe ser maximo de 4 digitos");}
+    }
+    
+}

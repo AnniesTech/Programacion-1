@@ -1,0 +1,29 @@
+/*
+ * Leer números hasta que el ingresado sea mayor al anterior.
+ */
+package leernumhastaqueseamayor;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHastaQueSeaMayor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read =  new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        int num = read.nextInt();
+        int n1=0;
+        
+        while (true) {
+            System.out.print("Ingrese un numero: ");
+            n1 = read.nextInt();
+            if (n1 <= num) {
+                num = n1;
+            } else {break;}
+    }
+    
+}}

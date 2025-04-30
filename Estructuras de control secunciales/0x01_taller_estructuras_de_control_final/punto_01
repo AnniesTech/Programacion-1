@@ -1,0 +1,22 @@
+/*
+ * Imprimir los numeros del 1 al 10 
+ */
+package imprimirdel1al10;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class ImprimirDel1al10 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        for(int i = 1; i <= 10; i++){
+            System.out.println(i);
+        }
+    }
+    
+}

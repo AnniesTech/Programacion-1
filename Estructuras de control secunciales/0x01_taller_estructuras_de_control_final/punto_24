@@ -1,0 +1,21 @@
+/*
+ * Imprimir los números del 1 al 10 utilizando while
+ */
+package imprimirdel1al10conwhile;
+/**
+ *
+ * @author Amarie
+ */
+public class ImprimirDel1al10ConWhile {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int n = 1;
+        
+        while(n <= 10){
+            System.out.println(n);
+            n++;     
+        }
+}}

@@ -1,0 +1,36 @@
+/*
+ * Leer una secuencia de caracteres hasta que se ingrese ‘x’, luego, imprimir la secuencia ingresada.
+ */
+package secuenciacharhastax;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class SecuenciaCharHastaX {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Ingrese un caracter: ");
+        String caracter = read.nextLine();
+        String arreglo = "";
+        
+        if (!caracter.equals("x")) {
+            arreglo = caracter;
+        }
+        
+        while(!caracter.equals("x")){
+            System.out.print("Ingrese un caracter: ");
+            caracter = read.nextLine();
+            
+            if (!caracter.equals("x")) {
+                arreglo += ", " + caracter;
+            }
+        }
+        System.out.println("Los caracteres ingresados son: " + arreglo + ".");
+    }
+    
+}

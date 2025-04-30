@@ -1,0 +1,32 @@
+/*
+ * Leer números hasta que el usuario ingrese 0, luego, imprimir los números impares
+ */
+package leernumhasta0imprimirimpares;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirImpares {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.println("ingrese un numero: ");
+        int n=read.nextInt();
+        int impar=0;
+        String impares ="";
+        while(n!=0){
+            if(n%2!=0){
+            impar=n;
+            impares += ""+n+" ";
+            }
+            System.out.println("ingrese un numero");
+            n=read.nextInt();
+        }
+        System.out.println("los numeros impares son: "+impares);
+    }
+    
+}

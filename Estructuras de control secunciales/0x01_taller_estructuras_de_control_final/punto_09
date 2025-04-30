@@ -1,0 +1,32 @@
+/*
+ * Leer números hasta que el usuario ingrese 0, luego, imprimir el promedio.
+ */
+package leernumhasta0imprimirelpromedio;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirElPromedio {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read=new Scanner(System.in);
+        int n=0;
+        double total = 0;
+        System.out.println("ingrese un numero: ");
+        n=read.nextInt();
+        double contador =0;
+        int suma = n;
+            while(n!=0){
+                System.out.println("ingrese un numero: ");
+                n=read.nextInt();
+                contador++;
+                suma = suma + n;      
+            }
+            total = suma/contador;
+            System.out.print("El promedio de los numero ingresados es: "+total);
+        }  
+}

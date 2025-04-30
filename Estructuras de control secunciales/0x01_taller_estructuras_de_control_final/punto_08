@@ -1,0 +1,33 @@
+/*
+ * Leer numeros hasta que el usuario ingrese 0 e imprimir el mayor numero ingresado y el menor numero ingresado
+ */
+package leernumhasta0imprimirmayorymenor;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirMayorYMenor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int num = 0;
+        System.out.print("Ingrese un numero: ");
+        num = read.nextInt();
+        int mayor = num;
+        int menor = num;
+        while(num !=0){
+            System.out.print("Ingrese un numero: ");
+            num = read.nextInt();
+            if(menor > num && num !=0){
+            menor = num;}
+            else if(mayor < num){
+            mayor = num;}
+        }
+        System.out.println("El menor numero ingresado es: "+menor+" y el mayor numero ingresado es: "+mayor); 
+    }
+    
+}

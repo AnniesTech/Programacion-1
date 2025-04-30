@@ -1,0 +1,42 @@
+/*
+ * Mostrar los divisores de un número ingresado por pantalla
+ */
+package divisoresdeunnum;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class DivisoresDeUnNum {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        int num = read.nextInt();
+        String divisores = "";
+        
+        if (num == 0){System.out.println("El numero 0 no tiene divisores");}
+        
+        else if(num > 0){
+        for(int i = 1; i <= num; i++){
+            if(num % i == 0){
+                if(i == num){divisores += i + ".";
+                }else{divisores += i+", ";}
+            }
+        }}
+        
+        else if (num < 0){
+                for(int j = -1; j >= num; j--){
+                if(num % j == 0){
+                if(j == num){divisores += j + ".";
+                }else{divisores += j+", ";}
+            }
+                }
+        }
+        System.out.println("Los divisores de "+num+" son: "+divisores);
+    }
+    
+}

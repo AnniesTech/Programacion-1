@@ -1,0 +1,32 @@
+/*
+ * Generar los primeros N términos de la serie 1, 2, 4, 8, 16… N se debe ingresar por pantalla.
+ */
+package ndeseriepordos;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class NDeSeriePorDos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.println("ingrese un numero: ");
+        int n=read.nextInt();
+        int num=1;
+        String secuencia = "";
+        for (int i=1; i <= n; i ++){
+            if (i < n) {
+                secuencia += num + ", ";
+            } else {secuencia += num + ".";}
+            //secuencia += num + " ";
+            num = num *2;
+            
+        }    
+        System.out.println(secuencia);
+    }
+    
+}

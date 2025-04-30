@@ -1,0 +1,27 @@
+/*
+ * Leer contraseñas hasta que se ingrese una correcta (la contraseña correcta es 123yose).
+ */
+package leerpasshastacorrecta;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerPassHastaCorrecta {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter your password: ");
+        String pass = read.nextLine();
+        
+        while(!pass.equals("123yose")){
+            System.out.print("Incorrect password, try again: ");
+            pass = read.nextLine();
+        }
+        System.out.println("Correct password");
+    }
+    
+}

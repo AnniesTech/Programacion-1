@@ -1,0 +1,37 @@
+/*
+ * Mostrar los números entre dos valores dados
+ */
+package valoresentre2numdados;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class ValoresEntre2NumDados {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Ingrese un valor inicial: ");
+        int inicio = read.nextInt();
+        System.out.print("Ingrese un valor final: ");
+        int fin = read.nextInt();
+        
+        System.out.println("Los numeros entre " + inicio + " y " + fin + " son:");
+        
+        if (inicio < fin) {
+            for (int i = inicio +1; i <= fin -1; i++) {
+                System.out.println(i);
+            }
+        }else if (inicio > fin) {
+            for (int i = inicio - 1; i >= fin -1; i--) {
+                System.out.println(i);
+            }}else {
+            System.out.println("El valor de inicio es igual al valor de fin.");
+        }
+        
+    }
+    
+}

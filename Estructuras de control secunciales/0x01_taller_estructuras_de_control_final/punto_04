@@ -1,0 +1,22 @@
+/*
+ * Contar hacia atras desde el 10 hacia el 1 
+ */
+package contardel10al1;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class ContarDel10Al1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        for(int i = 10; i >= 1; i--){
+            System.out.println(i);
+        }
+    }
+    
+}

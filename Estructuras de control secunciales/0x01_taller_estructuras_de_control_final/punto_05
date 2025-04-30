@@ -1,0 +1,26 @@
+/*
+ * Leer numeros hasta que el usuario ingrese el numero 0
+ */
+package leernumhasta0;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        int num = read.nextInt();
+        
+        while(num != 0){
+            System.out.print("Ingrese un numero: ");
+            num = read.nextInt();
+        }
+    }
+    
+}

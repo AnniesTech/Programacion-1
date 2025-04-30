@@ -1,0 +1,75 @@
+/*
+Simular un cajero automático:
+Al ejecutar el programa, debe aparecer un menú así:
+Digite 1 para consultar saldo
+Digite 2 para consignar dinero
+Digite 3 para retirar dinero
+Digite 4 para salir
+Al iniciar el programa el saldo debe estar en cero, si se intenta retirar un valor mayor al
+existente en el saldo, debe aparecer un mensaje indicando que los fondos son insuficientes.
+El programa no puede recibir números negativos.
+Cada que se haga cualquier operación en el cajero, el menú debe volver a aparecer hasta que
+el usuario digite 4 (opción para salir).
+ */
+package cajeroautomatico;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+/**
+ *
+ * @author Amarie
+ */
+public class CajeroAutomatico {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        double saldo = 0;
+        double retiro = 0;
+        int option  = 0;
+        double consignar = 0;
+        DecimalFormat formato = new DecimalFormat("#,###.00");
+
+        while (true) {
+            System.out.print("""
+                            Digite 1 para consultar saldo
+                            Digite 2 para consignar dinero
+                            Digite 3 para retirar dinero
+                            Digite 4 para salir
+                            ------------------------------------------------
+                            Marque su opcion a continuacion: """);
+            option = read.nextInt();
+            switch (option) {
+                case 1 -> {System.out.println("Su saldo actual es de: $"+formato.format(saldo));
+                        System.out.print("------------------------------------------------\n");}
+                case 2 -> {System.out.print("Ingrese el saldo que desea consignar: $");
+                        consignar = read.nextDouble();
+                        if (consignar <= 0) {System.out.println("Monto minimo de $1.00 para consignar");
+                        } else {
+                            saldo += consignar;
+                        System.out.println("Su nuevo saldo es de: $" + formato.format(saldo));}
+                        System.out.print("------------------------------------------------\n");}
+                case 3 -> {
+                            if(saldo == 0){System.out.println("Para retirar necesita un monto minimo de $1.00 en su saldo actual");
+                            System.out.print("------------------------------------------------\n");}
+                            else{
+                            System.out.print("Ingrese el saldo que desea retirar: $");
+                            retiro = read.nextDouble();
+                            if (retiro <= 0) {System.out.println("Monto minimo de $1.00 para retirar");}
+                            else if(retiro > saldo){System.out.println("El retiro no puede superar su saldo actual.");
+                            System.out.println("Su saldo actual es de: $"+formato.format(saldo));}
+                            else{saldo -= retiro;
+                            System.out.println("Su nuevo saldo es de: $"+formato.format(saldo));}
+                            
+                            System.out.print("------------------------------------------------\n");}
+                }
+                case 4 ->{System.out.println("Gracias por usar nuestros servicios.");
+                            return;}
+                default -> {
+                    System.out.println("La opcion ingresada es invalida, por favor intentelo de nuevo");
+                    System.out.print("------------------------------------------------\n");
+                }
+            }
+        }
+}}

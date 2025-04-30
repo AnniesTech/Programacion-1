@@ -1,0 +1,31 @@
+/*
+ * Leer números hasta que el usuario ingrese 0, luego, imprimir los números pares.
+ */
+package leernumhasta0imprimirpares;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirPares {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.println("ingrese un numero: ");
+        int n=read.nextInt();
+        int par=0;
+        String pares ="";
+        while(n!=0){
+            if(n%2==0){
+            par=n;
+            pares += ""+n+" ";}
+            System.out.println("ingrese un numero");
+            n=read.nextInt();
+        }
+        System.out.println("los numeros pares son: "+pares);
+    }
+    
+}

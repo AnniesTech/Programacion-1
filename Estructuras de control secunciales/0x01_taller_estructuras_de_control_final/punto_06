@@ -1,0 +1,30 @@
+/*
+ * Leer numeros hasta que el usuario ingrese 0 e imprimir el mayor numero ingresado
+ */
+package leernumhasta0imprimirmayor;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirMayor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int num = 0;
+        System.out.print("Ingrese un numero: ");
+        num = read.nextInt();
+        int mayor = num;
+        while(num !=0){
+            System.out.print("Ingrese un numero: ");
+            num = read.nextInt();
+            if(mayor < num){
+            mayor = num;     
+        }}
+        System.out.println("El mayor numero ingresado es: "+mayor); 
+    }
+    
+}

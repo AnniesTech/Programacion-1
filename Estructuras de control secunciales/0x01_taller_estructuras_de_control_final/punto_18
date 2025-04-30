@@ -1,0 +1,30 @@
+/*
+ *  Leer números hasta que el usuario ingrese 0, luego, imprimir cuántos números positivos y negativos ingresa el usuario.
+ */
+package leernumhasta0imprimirpositivonegativos;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class LeerNumHasta0ImprimirPositivoNegativos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+            Scanner read = new Scanner(System.in);
+            System.out.println("Ingrese un numero: ");
+            int num = read.nextInt();
+            int contadorPos = 0;
+            int contadorNeg = 0;
+            while(num != 0){
+                if(num>0){
+                    contadorPos++;
+                }else{contadorNeg++;}
+                System.out.println("Ingrese un numero: ");
+                num = read.nextInt();
+            }
+            System.out.println("La cantidad de numeros positivos ingresados es: "+contadorPos+" , la cantidad de numeros negativos ingresados es: "+contadorNeg+".");
+    }
+}

@@ -1,0 +1,24 @@
+/*
+ * Sumar los numeros entre 1 y 100
+ */
+package sumaentre1y100;
+import java.util.Scanner;
+/**
+ *
+ * @author Amarie
+ */
+public class SumaEntre1y100 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int suma = 0;
+        for(int i = 0; i<=100; i++){
+            suma += i;
+        }
+        System.out.println("La suma total de los numeros entre 1 y 100 es: "+suma);
+    }
+    
+}

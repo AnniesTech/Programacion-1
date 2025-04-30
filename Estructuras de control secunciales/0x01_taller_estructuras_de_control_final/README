@@ -1,0 +1,43 @@
+Taller ejercicios de programación con todas las estructuras de control.
+1. Imprimir los números del 1 al 10.
+2. Sumar los números del 1 al 100.
+3. Calcular la tabla de multiplicar de un número ingresado por el usuario.
+4. Contar hacia atrás desde 10 hasta 1.
+5. Leer números hasta que el usuario ingrese 0.
+6. Leer números hasta que el usuario ingrese 0, luego, imprimir el mayor.
+7. Leer números hasta que el usuario ingrese 0, luego, imprimir el menor.
+8. Leer números hasta que el usuario ingrese 0, luego, imprimir el mayor y el menor.
+9. Leer números hasta que el usuario ingrese 0, luego, imprimir el promedio.
+10. Leer números hasta que el usuario ingrese 0, luego, imprimir los números pares.
+11. Leer números hasta que el usuario ingrese 0, luego, imprimir los números impares.
+12. Leer números hasta que el usuario ingrese 0, luego, imprimir cuántos números pares y
+cuántos impares se ingresaron.
+13. Leer un número por pantalla de hasta 4 cifras, luego imprimir cuantas unidades,
+decenas, centenas y unidades de mil tiene.
+14. Leer un número de hasta 4 cifras por pantalla, luego, imprimir la suma de todos sus
+dígitos.
+15. Leer un número de 4 cifras exactas por pantalla, luego, imprimir si este es capicúa.
+16. Generar los primeros N términos de la serie 1, 2, 4, 8, 16… N se debe ingresar por
+pantalla.
+17. Leer contraseñas hasta que se ingrese una correcta (la contraseña correcta es
+123yose).
+18. Leer números hasta que el usuario ingrese 0, luego, imprimir cuántos números positivos
+y negativos ingresa el usuario.
+19. Leer números hasta que el ingresado sea mayor al anterior.
+20. Calcular el factorial de un número.
+21. Leer una secuencia de caracteres hasta que se ingrese ‘x’, luego, imprimir la secuencia
+ingresada.
+22. Mostrar los números entre dos valores dados.
+23. Mostrar los divisores de un número ingresado por pantalla.
+24. Imprimir los números del 1 al 10 utilizando while.
+25. Simular un cajero automático:
+Al ejecutar el programa, debe aparecer un menú así:
+Digite 1 para consultar saldo
+Digite 2 para consignar dinero
+Digite 3 para retirar dinero
+Digite 4 para salir
+Al iniciar el programa el saldo debe estar en cero, si se intenta retirar un valor mayor al
+existente en el saldo, debe aparecer un mensaje indicando que los fondos son insuficientes.
+El programa no puede recibir números negativos.
+Cada que se haga cualquier operación en el cajero, el menú debe volver a aparecer hasta que
+el usuario digite 4 (opción para salir).
